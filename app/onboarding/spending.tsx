@@ -6,10 +6,18 @@ import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { COLORS, FONT, SPACING } from '../../constants/theme';
 import { Spending, SpendingType, RecurrenceType } from '../../types';
 
-const SPENDING_TYPES = [
-  { id: 'fixed' as SpendingType, label: 'Fixed', icon: 'calendar-month' },
-  { id: 'variable' as SpendingType, label: 'Variable', icon: 'chart-line' },
-  { id: 'discretionary' as SpendingType, label: 'Discretionary', icon: 'shopping-outline' }
+type IconName = React.ComponentProps<typeof MaterialCommunityIcons>['name'];
+
+interface SpendingTypeOption {
+  id: SpendingType;
+  label: string;
+  icon: IconName;
+}
+
+const SPENDING_TYPES: SpendingTypeOption[] = [
+  { id: 'fixed', label: 'Fixed', icon: 'calendar-month' as IconName },
+  { id: 'variable', label: 'Variable', icon: 'chart-line' as IconName },
+  { id: 'discretionary', label: 'Discretionary', icon: 'shopping-outline' as IconName }
 ];
 
 const RECURRENCE_GROUPS = {

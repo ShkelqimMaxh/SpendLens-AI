@@ -3,6 +3,26 @@ import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, FONT, SPACING } from '../../constants/theme';
 
+// Add type for icon names
+type IconName = React.ComponentProps<typeof Ionicons>['name'];
+
+// Update interfaces with correct icon type
+interface SpendingItem {
+  id: string;
+  name: string;
+  amount: number;
+  date: string;
+  icon: IconName;
+}
+
+interface TopSpendingItem {
+  id: string;
+  name: string;
+  amount: number;
+  percentage: number;
+  icon: IconName;
+}
+
 export default function Dashboard() {
   const router = useRouter();
 
@@ -13,16 +33,16 @@ export default function Dashboard() {
     savings: 1000,
   };
 
-  const recentSpendings = [
-    { id: '1', name: 'Housing', amount: 800, date: '2023-09-15', icon: 'home-outline' },
-    { id: '2', name: 'Food', amount: 600, date: '2023-09-14', icon: 'restaurant-outline' },
-    { id: '3', name: 'Transportation', amount: 400, date: '2023-09-09', icon: 'car-outline' },
+  const recentSpendings: SpendingItem[] = [
+    { id: '1', name: 'Housing', amount: 800, date: '2023-09-15', icon: 'home-outline' as IconName },
+    { id: '2', name: 'Food', amount: 600, date: '2023-09-14', icon: 'restaurant-outline' as IconName },
+    { id: '3', name: 'Transportation', amount: 400, date: '2023-09-09', icon: 'car-outline' as IconName },
   ];
 
-  const topSpendings = [
-    { id: '1', name: 'Housing', amount: 800, percentage: 20, icon: 'home-outline' },
-    { id: '2', name: 'Food', amount: 600, percentage: 20, icon: 'restaurant-outline' },
-    { id: '3', name: 'Transportation', amount: 400, percentage: 13, icon: 'car-outline' },
+  const topSpendings: TopSpendingItem[] = [
+    { id: '1', name: 'Housing', amount: 800, percentage: 20, icon: 'home-outline' as IconName },
+    { id: '2', name: 'Food', amount: 600, percentage: 20, icon: 'restaurant-outline' as IconName },
+    { id: '3', name: 'Transportation', amount: 400, percentage: 13, icon: 'car-outline' as IconName },
   ];
 
   return (
