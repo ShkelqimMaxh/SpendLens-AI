@@ -1,50 +1,77 @@
-# Welcome to your Expo app 👋
+# SpendLens AI 📊
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+SpendLens AI is a smart financial management application that helps you track spending and make better financial decisions—automatically. Get personalized insights powered by AI to reach your financial goals faster.
 
-## Get started
+## Features 🌟
 
-1. Install dependencies
+### AI-Powered Insights
+- Smart financial analysis and recommendations
+- Personalized spending patterns detection
+- Automated categorization of transactions
 
-   ```bash
-   npm install
-   ```
+### Smart Spending Analysis
+- Real-time tracking of expenses
+- Detailed categorization
+- Historical spending patterns
 
-2. Start the app
+### Personalized Goals
+- Custom savings targets
+- Investment tracking
+- Progress monitoring
 
-   ```bash
-    npx expo start
-   ```
+## Screenshots 📱
 
-In the output, you'll find options to open the app in a
+### Welcome Screen
+![Welcome Screen](assets/screenshots/welcome.png)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Income Setup
+![Income Setup](assets/screenshots/income.png)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Savings Setup
+![Savings Setup](assets/screenshots/savings.png)
 
-## Get a fresh project
+### Spending Setup
+![Spending Setup](assets/screenshots/spending.png)
 
-When you're ready, run:
+### Dashboard
+![Dashboard](assets/screenshots/dashboard.png)
 
+## Technology Stack 💻
+
+- React Native / Expo
+- TypeScript
+- AI/ML for financial insights
+- Local storage for data privacy
+
+## Getting Started 🚀
+
+1. Clone the repository
 ```bash
-npm run reset-project
+git clone https://github.com/YourUsername/spendlens-ai.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
+```bash
+cd spendlens-ai
+npm install
+```
 
-## Learn more
+3. Start the development server
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Privacy & Security 🔒
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+SpendLens AI prioritizes your privacy:
+- All data is stored locally on your device
+- No sensitive financial information is transmitted
+- Secure by design
 
-## Join the community
+## Contributing 🤝
 
-Join our community of developers creating universal apps.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License 📝
+
+This project is licensed under the MIT License - see the LICENSE file for details.
